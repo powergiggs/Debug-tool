@@ -10,7 +10,7 @@ example use
 ```
 const debug = require('debugging-tool');
 
-debug('Our Server is running on port', port, 'success!');
+debug.debug('message', data, 'status');
 
 
 ```
