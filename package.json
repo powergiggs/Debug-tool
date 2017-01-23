@@ -16,5 +16,8 @@
     "utility tool"
   ],
   "author": "Kevin Smith <khsmith@fullsail.edu>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+  "colors": "^1.1.2"
+  }
 }
