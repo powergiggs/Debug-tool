@@ -1,9 +1,13 @@
+// made fs a const
 const fs = require('fs');
+// added 'colors'
 const colors = require('colors');
 
 
+// Melony commented out this code and made const above
+
 // fs = require('fs');
-//
+
 exports.debug = (title, obj, status, date) => {
   // date variable for timestamp
   const time = '\n' + new Date().toLocaleString();
@@ -14,7 +18,6 @@ exports.debug = (title, obj, status, date) => {
   const output = lineBreak + divider + title + divider;
   const format = obj + '\n' + dividerTwo;
 
-  /***********
   // Melony commented out this code and replaced it using the 'colors' package
   // https://www.npmjs.com/package/colors
 
@@ -22,7 +25,7 @@ exports.debug = (title, obj, status, date) => {
   // const red = '\x1B[31m';
   // const blue = '\x1B[34m';
 
-// Melony Smith commented out this code and replaced it with the code following below
+  // Melony commented out this code and replaced it with the code following below
 
   // set console color base on status return
   if (status !== 'success!') {
@@ -38,10 +41,8 @@ exports.debug = (title, obj, status, date) => {
 
 // End of code commented out by Melony
 
-***********/
-
-// **********
 // code added by Melony
+
 // 'if' statement to utilize 'console.error', 'console.warn' and 'console.log'
 if (process.env.DEBUG === 'true') {
   // if status is equal to error...
@@ -58,8 +59,8 @@ if (process.env.DEBUG === 'true') {
     console.log(colors.green('Alert!' + output + format + status + time))
   };
 }
+
 // end of code added by Melony
-// **********
 
   if (process.env.DEBUG === 'true') {
     // create log file
