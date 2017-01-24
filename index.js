@@ -3,6 +3,34 @@ const fs = require('fs');
 // added 'colors'
 const colors = require('colors');
 
+// Melony added the bumpit function which allows for automativ version increasing
+// bumpit function (v is shortened from version, if there is any confusion)
+function bumpit(vNow, incType){
+  // major = [0]
+  // minor = [1]
+  // patch = [2]
+  const vArray = vNow.split('.');
+
+for(const vIndex in vArray) {
+  vArray[vIndex] = parseInt(vArray[vIndex], 10);
+}
+  // patch
+  if (incType === 'patch'){
+    vArray[2] += 1; // increase patch
+  } else if (incType === 'minor'){
+    vArray[2] = 0; // set patch to 0
+    vArray[1] += 1; // increase minor by 1
+  } else if (incType === 'major'){
+    vArray[2] = 0; // set patch to 0
+    vArray[1] = 0; // set minor to 0
+    vArray[0] += 1; // increase major by 1
+  }
+
+  return vArray.join('.');
+}
+
+exports.bumpit = bumpit;
+
 
 // Melony commented out this code and made const above
 
