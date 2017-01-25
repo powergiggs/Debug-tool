@@ -15,7 +15,6 @@ const util = require('debugging-tool');
 
 util.debug('title', message, 'status');
 
-
 ```
 
 note also the environment variable must be set
