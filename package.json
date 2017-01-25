@@ -1,6 +1,6 @@
 {
   "name": "debugging-tool",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A utility package to debug api",
   "main": "index.js",
   "scripts": {
@@ -15,9 +15,18 @@
     "tool",
     "utility tool"
   ],
-  "author": "Kevin Smith <khsmith@fullsail.edu>",
+  "author": "Kevin Smith <kevin@powergiggs.com>",
   "license": "ISC",
   "dependencies": {
-  "colors": "^1.1.2"
+    "chalk": "^1.1.3",
+    "colors": "^1.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-config-atom-build": "^4.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
   }
 }
