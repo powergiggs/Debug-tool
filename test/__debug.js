@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const util = require('../util-tool');
+const util = require('../index.js');
 
 
 describe('Debug Tool Utiltity', () => {
