@@ -1,6 +1,6 @@
 {
   "name": "debugging-tool",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "A utility package to debug api",
   "main": "index.js",
   "scripts": {
