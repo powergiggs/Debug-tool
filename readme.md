@@ -29,7 +29,7 @@ then return a version number as a string.
 Using Version Bump:
 ```
 const util = require('debugging-tool');
-const patch = util.verBump('3.3.3', 'patch');
-const minor = util.verBump('3.3.3', 'minor');
-const major = util.verBump('3.3.3', 'major');
+const patch = util.bumpIt('3.3.3', 'patch');
+const minor = util.bumpIt('3.3.3', 'minor');
+const major = util.bumpIt('3.3.3', 'major');
 ```
